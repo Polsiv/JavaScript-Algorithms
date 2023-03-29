@@ -1,9 +1,7 @@
 let population = [];
 let fathers = [];
 let experimentation = [];
-let mistakes;
-
-for(let a = 0; a < 100; a++){
+for(let a = 0; a < 10; a++){
 
 let diagonal;
 let childArray = [];
@@ -18,10 +16,7 @@ while (childArray.length < 8) {
 
 //Fitness=========================================================================
 
-while(mistakes != 0){
-
-  population[a] = childArray; 
-
+population[a] = childArray; 
 
 function checkDiagonal(chromosome) {
   let diagonals = false;
@@ -60,17 +55,16 @@ let conflict = counterA + counterD;
 
   if(conflict == 0 && diagonal == false){
     fathers.push(childArray)
-    console.log(fathers)
-    mistakes = 0;
     }
   
   if(conflict >= 1 || diagonal == true){
     experimentation.push(childArray)
-    mistakes = 1;
   }
 }
 
-//console.log(experimentation)
+console.log(experimentation)
+//console.log(fathers)
+
 //Crossover========================================================
 
 crossover(experimentation)
@@ -113,9 +107,8 @@ function mutation(mutedpopulation) {
 }
 
 newMutedPopulation = mutation(mutedpopulation);
+console.log(newMutedPopulation);
 
-childArray = newMutedPopulation;
 
-}
 
 
