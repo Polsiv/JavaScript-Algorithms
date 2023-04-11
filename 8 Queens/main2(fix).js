@@ -1,7 +1,6 @@
 let population = [];
 let fathers = [];
 let experimentation = [];
-let mistakes;
 
 for(let a = 0; a < 100; a++){
 
@@ -18,10 +17,9 @@ while (childArray.length < 8) {
 
 //Fitness=========================================================================
 
-while(mistakes != 0){
 
-  population[a] = childArray; 
 
+population[a] = childArray; 
 
 function checkDiagonal(chromosome) {
   let diagonals = false;
@@ -116,6 +114,6 @@ newMutedPopulation = mutation(mutedpopulation);
 
 childArray = newMutedPopulation;
 
-}
+
 
 
