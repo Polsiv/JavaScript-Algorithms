@@ -1,8 +1,6 @@
 let population = [];
 let fathers = [];
 let experimentation = [];
-let numsolutions = false;
-let counter = 0;
 
 for (let a = 0; a < 100; a++) {
   let childArray = [];
@@ -17,8 +15,7 @@ for (let a = 0; a < 100; a++) {
 }
 
 //Fitness
-while(numsolutions == false){
-  fitness(population);
+fitness(population);
 
 function fitness() {
   for (let b = 0; b < population.length; b++) {
@@ -82,15 +79,12 @@ function fitness() {
 
     if (conflict == 0 && diagonal == false && duplicated == false) {
       fathers.push(childArray);
-      numsolutions = true;
-      console.log(fathers);
-      break;
     }
   }
 }
 
-//console.log(fathers);
-//-------------------------------------------------------------------------------
+console.log(experimentation)
+//-------------------------------------------------------------------------------\
 
 geneticAlgorithm(experimentation);
 
@@ -140,10 +134,5 @@ function geneticAlgorithm(expPopulation) {
   }
   let newMutedPopulation = mutation(mutedpopulation);
 
-  fitness(newMutedPopulation)
-  
-  }
-  counter ++;
-}
 
-console.log("number of generations " + counter)
+}
