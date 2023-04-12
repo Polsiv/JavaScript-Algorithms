@@ -1,7 +1,6 @@
 let population = [];
 let fathers = [];
 let experimentation = [];
-
 for(let a = 0; a < 100; a++){
 
 let diagonal;
@@ -16,8 +15,6 @@ while (childArray.length < 8) {
 }
 
 //Fitness=========================================================================
-
-
 
 population[a] = childArray; 
 
@@ -59,16 +56,16 @@ let conflict = counterA + counterD;
   if(conflict == 0 && diagonal == false){
     fathers.push(childArray)
     console.log(fathers)
-    mistakes = 0;
     }
   
   if(conflict >= 1 || diagonal == true){
     experimentation.push(childArray)
-    mistakes = 1;
   }
 }
 
 //console.log(experimentation)
+
+
 //Crossover========================================================
 
 crossover(experimentation)
@@ -111,9 +108,6 @@ function mutation(mutedpopulation) {
 }
 
 newMutedPopulation = mutation(mutedpopulation);
-
-childArray = newMutedPopulation;
-
-
+//console.log(newMutedPopulation);
 
 

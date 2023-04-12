@@ -1,25 +1,31 @@
+
 let population = [];
 let fathers = [];
 let experimentation = [];
 
 for(let a = 0; a < 100; a++){
 
-let diagonal;
 let childArray = [];
-let counterA=0,counterD=0;
-
 while (childArray.length < 8) {
   const random = Math.floor(Math.random() * 8);
   if (!childArray.includes(random)) {
     childArray.push(random);
+    }
   }
+  population[a] = childArray;
 }
 
+
+for(let b = 0; b < population.length; b++){
+
+let childArray = [];
+
+childArray = population[b];
+let duplicated;
+let diagonal;
+let counterA=0,counterD=0;
+
 //Fitness=========================================================================
-
-
-
-population[a] = childArray; 
 
 function checkDiagonal(chromosome) {
   let diagonals = false;
@@ -31,6 +37,17 @@ function checkDiagonal(chromosome) {
     }
   }
   return diagonals;
+}
+
+function hasDuplicates(chromosome) {
+  let seen = {}; 
+  for (let i = 0; i < chromosome.length; i++) {
+    if (chromosome[i] in seen) {
+      return true; 
+    }
+    seen[chromosome[i]] = true; 
+  }
+  return false; 
 }
 
   for(let i = 0; i < 8; i++){
@@ -53,25 +70,29 @@ for(let i = 7; i >= 0; i--){
 }
 
 diagonal = checkDiagonal(childArray);
+duplicated = hasDuplicates(childArray)
     
 let conflict = counterA + counterD;
 
-  if(conflict == 0 && diagonal == false){
-    fathers.push(childArray)
-    console.log(fathers)
-    mistakes = 0;
+
+  if(conflict == 0 && diagonal == false && duplicated == false){
+    fathers.push(childArray);
+
     }
   
-  if(conflict >= 1 || diagonal == true){
+  if(conflict >= 1 || diagonal == true || duplicated == true){
     experimentation.push(childArray)
-    mistakes = 1;
   }
 }
 
-//console.log(experimentation)
-//Crossover========================================================
 
-crossover(experimentation)
+geneticAlgorithm(experimentation)
+
+function geneticAlgorithm(expPopulation){
+let experimentationarray = expPopulation;
+
+//Crossover========================================================
+crossover(experimentationarray)
 
 function crossover(experimentation) {
   let newpopulation = [];
@@ -89,8 +110,6 @@ function crossover(experimentation) {
 
 let newpopulation = crossover(experimentation);
 
-console.log(newpopulation);
-
 //Mutation===================================================================
 
 let mutedpopulation = JSON.parse(JSON.stringify(newpopulation))//DEEPCOPY
@@ -106,14 +125,9 @@ function mutation(mutedpopulation) {
     const temp = chromosome[index1];
     chromosome[index1] = chromosome[index2];
     chromosome[index2] = temp;
-  }
+    }
   return mutedpopulation;
-}
+  }
 
 newMutedPopulation = mutation(mutedpopulation);
-
-childArray = newMutedPopulation;
-
-
-
-
+  }
