@@ -1,0 +1,34 @@
+Pedro Pablo; Perez Prieto; 3; Enero; 1952; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Maria Alejandra; Valencia Alcala; 23; Marzo; 1975; Libertadores; Alcalá; Venezuela; O; -; Femenino
+Maria Paula; Uribe; 29; Enero; 2021; Cartagena; Bolivar; Colombia; A; +; Femenino
+Tatiana; Hernandez Aponte; 28; Septiembre; 1985; San Vicente del Caguán; Caquetá; Colombia; O; +; Femenino
+Jose Pablo; Rodas Prieto; 22; Agosto; 1990; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Alejandra; Lopez Alcala; 13; Mayo; 1935; Libertadores; Alcalá;Venezuela; A; -; Femenino
+Antonia; Tuequer; 6; Diciembre; 2016; Pereira; Risaralda; Colombia; A; -; Femenino
+Ana Maria; Vargas Martinez; 8; Noviembre; 2008; Lima; Lima; Peru; A; +; Femenino
+Sergio Andres Pablo; Cordoba Lleras; 20; Octubre; 1982; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Maria Gissela; Torres Torres; 9; Febrero; 2020; Libertadores; Alcalá;Venezuela; O; +; Femenino
+Carlos Alberto; Zuluaga Alvarez; 31; Julio; 1973; Buenos Aires; Cauca; Colombia; A; +; Masculino  
+Carlos Sebastian; Cortes Saavedra; 14; Julio; 2001; Palermo; Huila; Colombia; A; +; Masculino  
+Samuel Sergio; Reyes de las Casas; 10; Abril; 1970; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Lu Na; Saa Rey; 21; Julio; 1966; Libertadores; Alcalá;Venezuela; O; -; Femenino
+Daniella Sophia; Muñoz Gaviria; 10; Febrero; 1923; Filandia; Quindio; Colombia; A; +; Femenino
+Maria José; Rosas Carabalí; 14; Abril; 1962; Palmira; Valle; Colombia; A; +; Femenino
+Maria del Mar; Gómez García; 3; Enero; 1952; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Parricia Eugenia de los Ángeles; Alcala Valencia; 23; Marzo; 1975; Libertadores; Alcalá; Venezuela; O; -; Femenino
+Maria Paula; Garay Robles; 29; Enero; 2021; Cartagena; Bolivar; Colombia; A; +; Femenino
+Disneylandia Vanessa; Rodriguez Escobar; 28; Septiembre; 1985; San Vicente del Caguán; Caquetá; Colombia; O; +; Femenino
+Sebastian; Valdez; 22; Agosto; 1990; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Alejandra; Villegas Lucio; 13; Mayo; 1935; Libertadores; Alcalá;Venezuela; A; -; Femenino
+Antoninna; Gallego Vargas; 6; Diciembre; 2016; Pereira; Risaralda; Colombia; A; -; Femenino
+Ana Mellisa; Villa Mendez; 8; Noviembre; 2008; Lima; Lima; Peru; A; +; Femenino
+Sergio ALejandro Pablo; Cortes Llano; 20; Octubre; 1982; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Maria Gustavina; Turmeque Torres; 9; Febrero; 2020; Libertadores; Alcalá; Venezuela; O; +; Femenino
+Carlos Andres; Zapala Andrade; 31; Julio; 1973; Buenos Aires; Cauca; Colombia; A; +; Masculino  
+Carlos Samuel; Conde Sinisterra; 14; Julio; 2001; Palermo; Huila; Colombia; A; +; Masculino  
+Samuel Sebastian; Rey Cristancho; 10; Abril; 1970; Guatavita; Cundinamarca; Colombia; AB; +; Masculino  
+Luna Naranja; Saavedra Reyes; 21; Julio; 1966; Libertadores; Alcalá; Venezuela; O; -; Femenino
+Daniella Sebastiana; Muñoz Garcia; 10; Febrero; 1923; Filandia; Quindio; Colombia; A; +; Femenino
+Maria José; Rosas Carabalí; 15; Abril; 1963; Palmira; Valle; Colombia; A; +; Femenino
+
+
