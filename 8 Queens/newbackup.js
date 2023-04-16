@@ -4,7 +4,7 @@ let experimentation = [];
 let solution = 0;
 //generate population of choromosomes
 
-for (let a = 0; a < 10; a++) {
+for (let a = 0; a < 100; a++) {
   let childArray = [];
 
   while (childArray.length < 8) {
