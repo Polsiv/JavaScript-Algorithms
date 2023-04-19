@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+   <div class="container">
+     <h1>Bases switcher</h1>
+     <form onsubmit="convertir(event)">
+       <label for="numero">Enter the number:</label>
+       <input type="text" id="number" name="numero">  
+       <label for="base1">Main base</label>
+       <input type="number" id="base1" name="base1" min="2" max="36" value="10">
+       <label for="base2">To base:</label>
+       <input type="number" id="base2" name="base2" min="2" max="36" value="10">
+       <input type="submit" value="Convert" id="input2">
+     </form>
+     <div id="result"></div>
+     
+   </div>
+    <script src="main.js"></script>
+  </body>
+</html>
