@@ -114,7 +114,7 @@ function geneticAlgorithm(expPopulation) {
       const crossoverPoint = Math.floor(Math.random() * parent1.length);
       const child1 = parent1
         .slice(0, crossoverPoint)
-        .concat(parent2.slice(crossoverPoint));
+        .concat(parent2.slice(crossoverPoint));image.png
       const child2 = parent2
         .slice(0, crossoverPoint)
         .concat(parent1.slice(crossoverPoint));
