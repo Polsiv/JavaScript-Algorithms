@@ -1,17 +1,19 @@
+let number = document.getElementById('number')
+let base = document.getElementById('base')
 
- let Number = prompt("Enter the number")
- let Base = prompt("Enter the base")
-
-
-
-function convertToDecimal(number, base) {
-    let decimal = 0;
-
-for( let i = 0; i < number.length; i++){
-let digit = parseInt(number[i], base)
-}
-    
-console.log(decimal)
+function decimalToBase(decimalNumber, base) {
+  const digitLookup = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let result = '';
+  while (decimalNumber > 0) {
+    let digit = decimalNumber % base;
+    result = digitLookup[digit] + result;
+    decimalNumber = Math.floor(decimalNumber / base);
   }
+  return result;
+}
 
-  convertToDecimal(Number, Base)
+document.querySelector("submit").addEventListener('click', (event) =>{
+  event.preventDefault;
+ console.log(decimalToBase(number.value, base.value));
+})
+
